@@ -5,9 +5,15 @@
       <li><a [routerLink]="['/']">Home</a></li>
       <li routerLinkActive="active"><a [routerLink]="['/login']">Login</a></li>
       <li routerLinkActive="active"><a [routerLink]="['/courses']">Courses</a></li>
+      <li routerLinkActive="active"><a [routerLink]="['course', idCourse.value]">Course with ID</a></li>
+
     </ul>
   </div>
 </nav>
 <div class="container">
+  <p>Enter with the ID of Course</p>
+  <input type="text" #idCourse>
   <router-outlet></router-outlet>
 </div>
+
+
